@@ -1,0 +1,14 @@
+.text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;      
+  width: 300px; 
+  height: 300px;
+  font-size: 100px;
+}
+#question-box {
+  background-color:powderblue; 
+}
+#answer-text {
+  background-color:bisque; 
+}
