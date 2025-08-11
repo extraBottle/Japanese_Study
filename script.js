@@ -4,7 +4,8 @@ const hiragana = [
     "さ", "し", "す", "せ", "そ",
     "た", "ち", "つ", "て", "と",
     "な", "に", "ぬ", "ね", "の",
-    "は", "ひ", "ふ", "へ", "ほ"
+    "は", "ひ", "ふ", "へ", "ほ",
+    "ま", "み", "む", "め", "も"
 ]
 const hiraganaKor = [
     "아", "이", "우", "에", "오",
@@ -12,10 +13,15 @@ const hiraganaKor = [
     "사", "시", "스", "세", "소",
     "타", "치", "츠", "테", "토",
     "나", "니", "누", "네", "노",
-    "하", "히", "후", "헤", "호"
+    "하", "히", "후", "헤", "호",
+    "마", "미", "무", "메", "모"
 ]
 let flag = true;
 let counting = 0;
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("total-count").innerHTML = hiragana.length;
+});
 
 function randomPick(){
     if (flag) {
