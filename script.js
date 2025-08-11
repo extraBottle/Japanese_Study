@@ -15,6 +15,7 @@ const hiraganaKor = [
     "하", "히", "후", "헤", "호"
 ]
 let flag = true;
+let counting = 0;
 
 function randomPick(){
     if (flag) {
@@ -39,6 +40,8 @@ function findAnswer(){
 function clickNext() {
   document.getElementById("question-box").innerHTML = randomPick();
   document.getElementById("answer-text").innerHTML = "";
+  counting += 1;
+  document.getElementById("answer-text").innerHTML = counting;
 }
 function clickAnswer() {
   document.getElementById("answer-text").innerHTML = findAnswer();
