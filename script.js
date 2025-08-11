@@ -41,7 +41,7 @@ function clickNext() {
   document.getElementById("question-box").innerHTML = randomPick();
   document.getElementById("answer-text").innerHTML = "";
   counting += 1;
-  document.getElementById("answer-text").innerHTML = counting;
+  document.getElementById("counter").innerHTML = counting;
 }
 function clickAnswer() {
   document.getElementById("answer-text").innerHTML = findAnswer();
