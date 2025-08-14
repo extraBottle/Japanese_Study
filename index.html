@@ -7,6 +7,14 @@
     </head>
     <body>
         <h1>일본어 공부용 </h1>
+        <div>
+            <input type="radio" id="hira" name="range" value="히라가나" checked onclick="chooseRange()">
+            <label for="both">히라가나</label>
+            <input type="radio" id="gata" name="range" value="가타카나" onclick="chooseRange()">
+            <label for="both">가타카나</label>
+            <!-- <input type="radio" id="both" name="range" value="둘다" onclick="chooseRange()">
+            <label for="both">둘다</label> -->
+        </div>
         <div class="text-box" id="question-box">문제</div>        
         <button type="button" onclick="clickNext()">next</button>
         <button type="button" onclick="clickAnswer()">answer</button>
